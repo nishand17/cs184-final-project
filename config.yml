@@ -1,0 +1,12 @@
+# Setup
+title: CS 184 
+tagline: CS 184 Final Project 
+locale: "en"
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
+theme: jekyll-theme-cayman

@@ -12,6 +12,8 @@ Our group is working on a procedurally generated 2D terrain renders in Python. A
 
 As a stretch goal, we also plan to experiment with more advanced concepts such as particle effects to augment our terrain. For instance, we can use a fire + smoke particle simulation for a fire pit surrounded by tents.
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/99af2838af56489cbfc266e8e66cba8a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 # Progress
 
 We have had a steady progress so far.

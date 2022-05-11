@@ -1,6 +1,19 @@
+
+# Procedurally Generated Terrain
+
+Bilal Syed | Nishan D’Souza
+
+Scott Sunarto | Hans Zhang
+
 # Abstract
 
+![alt_text](images/1.png "image_tooltip")
+
 In this project, we created a Python program that procedurally generate and render world landscapes inspired from the games of our childhood such as Minecraft and Terraria. The program uses a 2-dimensional OpenSimplex noise function to procedurally generate the world surface, employs color theory to select aesthetically pleasing color palette, and use kinematics-based animation techniques to simulate a real world physics environment.
+
+# Final Project Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lpVtOJ58fQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Technical Approach
 
@@ -10,7 +23,7 @@ To procedurally generate the world surface a smooth and realistic terrain, we ne
 
 Using a white noise (random noise) function will not suffice due to the erratic non-pattern look it generates. Instead, we direct our attention to gradient noise functions, specifically the Perlin noise function and its successor, that provides a smooth transition between its adjacent values.
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/2.png "image_tooltip")
 
 
 _Visualization of Random Noise vs. Perlin Noise in 1-dimension_
@@ -55,7 +68,7 @@ On a high-level, the color scheme that we want to be working in is the HSLA (Hue
 1. Hills and mountains layering
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/3.png "image_tooltip")
 
 
 
@@ -67,7 +80,7 @@ For mountains and hills, we start with a randomly selected hue value for all of 
 2. Night sky
 
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/4.png "image_tooltip")
 
 
 
@@ -86,7 +99,7 @@ This is inspired by Minecraft’s “view distance” setting that fades away th
 ## Kinematics-based Animation
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/5.png "image_tooltip")
 
 
 The crowning jewel of the terrain render is the star field that graces the night sky. The animation for the star-field is procedurally generated using kinematics and it performs a simple simulation of “gravity” and “air resistance” to create the natural looking shooting star effect.
@@ -132,6 +145,11 @@ To work around this, we need to carefully plan how each of the components is lay
 # Results
 
 Attached are example landscapes of the procedurally generated landscapes. For complete demonstration of the animation, the final video serves as a better reference to the animated component of the result.
+
+![alt_text](images/6.png "image_tooltip")
+
+![alt_text](images/7.png "image_tooltip")
+
 
 # References
 

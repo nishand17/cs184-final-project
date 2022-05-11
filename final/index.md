@@ -110,7 +110,7 @@ Last but not least, we added subtle details on the animation such as the fade in
 
 **The main problems/challenges that we faced can be boiled down into two key themes:** \
  \
-1**) The time consuming trial-and-error process required to come up with a satisfying render**
+**1) The time consuming trial-and-error process required to come up with a satisfying render**
 
 A lot of the time that we spent in this project involves fine tuning animations, constants, and components to achieve the result that we want. Sometime, this involves refactoring a huge chunk of the codebase as we learned that the way that we architected it does not allow us to cleanly do certain things. 
 

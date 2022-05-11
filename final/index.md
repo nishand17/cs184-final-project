@@ -46,15 +46,15 @@ points = []
 
 For i in range(SCREEN_WIDTH):
 
-	points.append([i, &lt;obj y-offset> + &lt;amplitude> * noise(&lt;x-step> * i, &lt;y-step>])
+	points.append([i, <obj y-offset> + <amplitude> * noise(<x-step> * i, <y-step>])
 
-&lt;obj y-offset> 	: the location where the points will be rendered
+<obj y-offset> 	: the location where the points will be rendered
 
-&lt;amplitude>	: the amplitude, in pixels, for the hills/mountains
+<amplitude>	: the amplitude, in pixels, for the hills/mountains
 
-&lt;x-step>	: a discrete step in the noise x-axis that determines the noise value
+<x-step>	: a discrete step in the noise x-axis that determines the noise value
 
-&lt;y-step>	: a discrete step in the noise y-axis that determines the noise value, used to generate subtle differences in the mountain and hills layering
+<y-step>	: a discrete step in the noise y-axis that determines the noise value, used to generate subtle differences in the mountain and hills layering
 ```
 
 ## Color Theory
@@ -65,8 +65,8 @@ On a high-level, the color scheme that we want to be working in is the HSLA (Hue
 
 
 
-1. Hills and mountains layering
-
+**Hills and mountains layering
+**
 
 ![alt_text](images/3.png "image_tooltip")
 
@@ -77,8 +77,8 @@ In the world terrain, you might notice that the hills and mountains have “laye
 
 For mountains and hills, we start with a randomly selected hue value for all of the layers, then we slightly adjust the saturation and lightness for each layer to achieve the result that we are looking for. This gives us the “monochromatic” color palette that we are looking for.
 
-2. Night sky
-
+**Night sky
+**
 
 ![alt_text](images/4.png "image_tooltip")
 
@@ -88,8 +88,8 @@ If you look closely, you might notice that the night sky also has a randomly sel
 
 
 
-3. Mountain “view distance”
-
+**Mountain “view distance”
+**
 Another subtle detail on the night sky is in the way the mountain range is drawn. You might notice that the mountain seemingly fades into the night sky as if there are layers of fogs. We achieve this by setting the alpha of the mountain range to a lower value and allowing it to blend to the night sky background.
 
 
